@@ -182,6 +182,9 @@ pub enum Language {
     #[cfg(feature = "nynorsk")]
     Nynorsk,
 
+    #[cfg(feature = "occitan")]
+    Occitan,
+
     #[cfg(feature = "persian")]
     Persian,
 
@@ -481,6 +484,9 @@ impl Language {
             #[cfg(feature = "nynorsk")]
             Language::Nynorsk => IsoCode639_1::NN,
 
+            #[cfg(feature = "occitan")]
+            Language::Occitan => IsoCode639_1::OC,
+
             #[cfg(feature = "persian")]
             Language::Persian => IsoCode639_1::FA,
 
@@ -711,6 +717,9 @@ impl Language {
             #[cfg(feature = "nynorsk")]
             Language::Nynorsk => IsoCode639_3::NNO,
 
+            #[cfg(feature = "occitan")]
+            Language::Occitan => IsoCode639_3::OCI,
+
             #[cfg(feature = "persian")]
             Language::Persian => IsoCode639_3::FAS,
 
@@ -888,6 +897,9 @@ impl Language {
 
             #[cfg(feature = "nynorsk")]
             Language::Nynorsk => hashset!(Alphabet::Latin),
+
+            #[cfg(feature = "occitan")]
+            Language::Occitan => hashset!(Alphabet::Latin),
 
             #[cfg(feature = "polish")]
             Language::Polish => hashset!(Alphabet::Latin),
@@ -1175,6 +1187,7 @@ mod tests {
                 Marathi,
                 Mongolian,
                 Nynorsk,
+                Occitan,
                 Persian,
                 Polish,
                 Portuguese,
@@ -1258,6 +1271,7 @@ mod tests {
                 Marathi,
                 Mongolian,
                 Nynorsk,
+                Occitan,
                 Persian,
                 Polish,
                 Portuguese,
@@ -1351,6 +1365,7 @@ mod tests {
                 Malay,
                 Maori,
                 Nynorsk,
+                Occitan,
                 Polish,
                 Portuguese,
                 Romanian,
