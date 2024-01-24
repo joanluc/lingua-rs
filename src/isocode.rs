@@ -228,6 +228,10 @@ pub enum IsoCode639_1 {
     /// The ISO 639-1 code for [`Norwegian Nynorsk`](crate::language::Language::Nynorsk)
     NN,
 
+    #[cfg(feature = "occitan")]
+    /// The ISO 639-1 code for [`Occitan`](crate::language::Language::Occitan)
+    OC,
+
     #[cfg(feature = "punjabi")]
     /// The ISO 639-1 code for [`Punjabi`](crate::language::Language::Punjabi)
     PA,
@@ -545,6 +549,10 @@ pub enum IsoCode639_3 {
     #[cfg(feature = "bokmal")]
     /// The ISO 639-3 code for [`Norwegian Bokmal`](crate::language::Language::Bokmal)
     NOB,
+
+    #[cfg(feature = "occitan")]
+    /// The ISO 639-1 code for [`Occitan`](crate::language::Language::Occitan)
+    OCI,
 
     #[cfg(feature = "punjabi")]
     /// The ISO 639-3 code for [`Punjabi`](crate::language::Language::Punjabi)
